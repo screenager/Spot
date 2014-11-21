@@ -222,7 +222,7 @@ class Collection implements \Iterator, \Countable, \ArrayAccess
         return isset($this->_results[$key]);
     }
 
-    public function &offsetGet($key) {
+    public function offsetGet($key) {
         return $this->_results[$key];
     }
 
